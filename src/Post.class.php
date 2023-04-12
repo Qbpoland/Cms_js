@@ -128,6 +128,11 @@ class Post {
         else
             return false;
     }
-}
 
+
+public function getLikes() {
+    $likes = Likes::getLikes($this->getId());
+    return $likes;
+}
+}
 ?>
